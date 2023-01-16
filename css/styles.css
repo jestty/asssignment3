@@ -1,0 +1,268 @@
+:root {
+  --primary-color: #047aed;
+  --secondary-color: #1c3fa8;
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+  --grey--color: #d3d3d3;
+  --slayGrey--color: #c6e2ff;
+}
+
+.bg-success {
+  background-color: var(--success-color);
+}
+.bg-grey {
+  background-color: var(--grey--color);
+}
+.bg-slayGrey {
+  background-color: var(--slayGrey--color);
+}
+body {
+  background-color: var(--slayGrey--color);
+}
+
+/* tao thanh span */
+#job-info .bolt1 {
+  display: inline-block;
+  height: 5px;
+  width: 10%;
+  padding-left: 40px;
+  background-color: #199cdb;
+}
+#job-info .bolt2 {
+  display: inline-block;
+  height: 5px;
+  width: 10%;
+  padding-left: 40px;
+  background-color: rgb(233, 230, 230);
+}
+
+/* tao mau cho list su dung phan tu gia  */
+
+.point-color ul li {
+  list-style: none;
+  position: relative;
+  padding-top: 60px;
+  padding-left: 20px;
+}
+
+.point-color ul li::before {
+  content: '';
+  position: absolute;
+  top: 67px;
+  left: -20px;
+  width: 12px;
+  height: 12px;
+  background: #199cdb;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px grey;
+}
+
+/* lop bo xung cho javaScript */
+.display1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+  flex-shrink: 1;
+}
+.display2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+  order: 1;
+  flex-shrink: 1;
+}
+
+.display3 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+  order: 2;
+  flex-shrink: 1;
+}
+.display4 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+  order: 3;
+  flex-shrink: 1;
+}
+
+/* chinh kick thuoc cho table */
+.content-plan {
+  border-collapse: collapse;
+  width: 100%;
+  height: 300px;
+}
+
+/* tao hover cho link */
+.contact:hover {
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 75px;
+  background-color: var(--success-color);
+  transition: transform 0.3s ease-in;
+}
+.contact1:hover {
+  font-weight: bold;
+  color: var(--success-color);
+  transform: scaleY(1);
+}
+.direction:hover {
+  font-weight: bold;
+  color: var(--success-color);
+  transform: scaleY(1);
+  transition: transform 0.3s ease-in;
+}
+
+/* tao goc border va do noi */
+.index {
+  z-index: 100;
+}
+.radius {
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+}
+
+.img-certificate1,
+.img-certificate2,
+.img-certificate3 {
+  width: 380px;
+  height: auto;
+}
+
+/* truot tu trai sang phai */
+@keyframes SlideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes SlideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* truot tu tren xuong duoi */
+@keyframes SlideInFromTop {
+  0% {
+    transform: translatey(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes SlideInFromBottom {
+  0% {
+    transform: translatey(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* tao responsive cho kich thuoc man hinh */
+/* man hinh tu may tinh bang tro len width >= 576px */
+@media (min-width: 576px) {
+  .item1,
+  .item2 {
+    border-left: 1px solid #333;
+  }
+  .item3,
+  .item4 {
+    border-left: 1px solid #333;
+  }
+  .item4 {
+    border-right: 1px solid #333;
+  }
+}
+/* man hinh mobile width <= 576px*/
+@media (max-width: 576px) {
+  .img-certificate2,
+  .img-certificate3 {
+    border-top: orange solid 1px;
+  }
+  /* truot tu tren xuong duoi */
+  /* #about {
+    animation: SlideInFromTop 1.5s ease-in;
+  } */
+  /* truot tu trai qua phai */
+  /* .content-kn,
+  .content-skills,
+  .content-lang,
+  .certificate1,
+  .certificate3,
+  .plan1,
+  #target {
+    animation: SlideInFromLeft 1.5s ease-in;
+  } */
+  /* truot phai qua trai */
+  /* .active-hd,
+  .edu-hv,
+  .hobby-sth,
+  .certificate2,
+  .plan2,
+  #personal-info {
+    animation: SlideInFromRight 1.5s ease-in;
+  } */
+}
+
+/* man hinh may tinh */
+@media (min-width: 768px) {
+  .item2 {
+    border-right: 1px solid #333;
+  }
+  #personal-info {
+    padding-left: 100px;
+  }
+  .certificate1,
+  .certificate2 {
+    border-bottom: 1px solid #d6c08d;
+    position: relative;
+  }
+  .certificate2 .img-certificate2::before {
+    content: '';
+    position: absolute;
+    height: 250px;
+    width: 1px;
+    left: -25%;
+    translate: middle;
+    background-color: #d6c08d;
+  }
+  /* truot tu trai qua phai */
+  .content-kn,
+  .content-skills,
+  .content-lang,
+  .certificate1,
+  .certificate3,
+  .plan1,
+  #target {
+    animation: SlideInFromLeft 1.5s ease-in;
+  }
+  /* truot phai qua trai */
+  .active-hd,
+  .edu-hv,
+  .hobby-sth,
+  .certificate2,
+  .plan3,
+  #personal-info {
+    animation: SlideInFromRight 1.5s ease-in;
+  }
+  /* truot tu duoi len tren */
+  .plan2 {
+    animation: SlideInFromBottom 1.5s ease-in;
+  }
+}
