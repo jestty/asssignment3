@@ -21,7 +21,9 @@
 body {
   background-color: var(--slayGrey--color);
 }
-
+p {
+  margin-bottom: 0.3rem;
+}
 /* tao thanh span */
 #job-info .bolt1 {
   display: inline-block;
@@ -43,14 +45,14 @@ body {
 .point-color ul li {
   list-style: none;
   position: relative;
-  padding-top: 60px;
-  padding-left: 20px;
+  padding-top: 15px;
+  padding-left: 10px;
 }
 
 .point-color ul li::before {
   content: '';
   position: absolute;
-  top: 67px;
+  top: 51px;
   left: -20px;
   width: 12px;
   height: 12px;
@@ -128,7 +130,7 @@ body {
 .img-certificate1,
 .img-certificate2,
 .img-certificate3 {
-  Max-width: 380px;
+  max-width: 380px;
   height: auto;
 }
 
@@ -195,17 +197,15 @@ body {
   .img-certificate3 {
     border-top: orange solid 1px;
   }
-  
-    .text-banner h1 {
+  .text-banner h1 {
     font-size: 1.5rem;
   }
-  
   .text-banner span {
     font-size: 0.8rem;
   }
 }
 
-/* man hinh may tinh */
+/* man hinh may tinh >=768px */
 @media (min-width: 768px) {
   .item2 {
     border-right: 1px solid #333;
