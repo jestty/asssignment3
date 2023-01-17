@@ -128,7 +128,7 @@ body {
 .img-certificate1,
 .img-certificate2,
 .img-certificate3 {
-  width: 380px;
+  Max-width: 380px;
   height: auto;
 }
 
