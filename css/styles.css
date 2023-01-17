@@ -195,29 +195,14 @@ body {
   .img-certificate3 {
     border-top: orange solid 1px;
   }
-  /* truot tu tren xuong duoi */
-  /* #about {
-    animation: SlideInFromTop 1.5s ease-in;
-  } */
-  /* truot tu trai qua phai */
-  /* .content-kn,
-  .content-skills,
-  .content-lang,
-  .certificate1,
-  .certificate3,
-  .plan1,
-  #target {
-    animation: SlideInFromLeft 1.5s ease-in;
-  } */
-  /* truot phai qua trai */
-  /* .active-hd,
-  .edu-hv,
-  .hobby-sth,
-  .certificate2,
-  .plan2,
-  #personal-info {
-    animation: SlideInFromRight 1.5s ease-in;
-  } */
+  
+    .text-banner h1 {
+    font-size: 1.5rem;
+  }
+  
+  .text-banner span {
+    font-size: 0.8rem;
+  }
 }
 
 /* man hinh may tinh */
