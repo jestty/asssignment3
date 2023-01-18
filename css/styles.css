@@ -119,10 +119,8 @@ p {
 }
 
 /* tao goc border va do noi */
-.index {
-  z-index: 100;
-}
 .radius {
+  z-index: 100;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
 }
@@ -198,10 +196,10 @@ p {
     border-top: orange solid 1px;
   }
   .text-banner h1 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .text-banner span {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
 }
 
