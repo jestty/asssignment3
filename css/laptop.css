@@ -1,0 +1,288 @@
+:root {
+  --primary-color: #047aed;
+  --secondary-color: #1c3fa8;
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+  --grey--color: #f6f6f6;
+  --slayGrey--color: #c6e2ff;
+  --darkorchid--color: #9370db;
+}
+.bg-violet {
+  background-color: var(--darkorchid--color);
+}
+.bg-success {
+  background-color: var(--success-color);
+}
+.bg-grey {
+  background-color: var(--grey--color);
+}
+.bg-slayGrey {
+  background-color: var(--slayGrey--color);
+}
+body {
+  background-color: var(--slayGrey--color);
+}
+p {
+  margin-bottom: 0.3rem;
+}
+/* tao thanh span cho ky nang va ngon ngu */
+#job-info .bolt1 {
+  display: inline-block;
+  height: 5px;
+  width: 10%;
+  padding-left: 40px;
+  background-color: #199cdb;
+}
+#job-info .bolt2 {
+  display: inline-block;
+  height: 5px;
+  width: 10%;
+  padding-left: 40px;
+  background-color: rgb(233, 230, 230);
+}
+
+/* chinh size  */
+#job-info h2 {
+  font-size: 1.4rem;
+}
+
+/* chinh size button */
+.view1,
+.view2,
+.view3,
+.view4,
+.view5,
+.view6 {
+  font-size: 0.5rem;
+}
+
+.plan-title1,
+.plan-title2,
+.plan-title3 {
+  border: 1px solid #333;
+}
+/* tao mau cho list su dung phan tu gia  */
+
+.point-color ul li {
+  list-style: none;
+  position: relative;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.point-color ul li::before {
+  content: '';
+  position: absolute;
+  top: 51px;
+  left: -20px;
+  width: 12px;
+  height: 12px;
+  background: #199cdb;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px grey;
+}
+
+/* tao hover cho link */
+.contact:hover {
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 75px;
+  background-color: var(--success-color);
+  transition: transform 0.3s ease-in;
+}
+.contact1:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+.contact1:visited {
+  color: #047aed;
+}
+.contact1:hover {
+  font-weight: bold;
+  color: var(--success-color);
+  transform: scaleX(1);
+  text-decoration: underline orangered;
+}
+
+.contact1:active {
+  font-weight: italic;
+  background-color: #5cb85c;
+  color: #f4f4f4;
+}
+.direction:hover {
+  font-weight: bold;
+  color: var(--success-color);
+  transform: scaleY(1);
+  transition: transform 0.3s ease-in;
+}
+/* an chuc nang thong tin nghe nghiep */
+.my-height {
+  height: 200px;
+  padding-top: 2rem;
+}
+
+.view {
+  font-size: 0.5rem;
+}
+
+/* tao goc border */
+.radius {
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+}
+
+/* kick thuoc anh chung chi */
+.img-certificate1,
+.img-certificate2,
+.img-certificate3 {
+  max-width: 380px;
+  height: auto;
+}
+
+/* bo anh ca nhan */
+.img-info {
+  width: 114px;
+  height: 114px;
+  bottom: -55%;
+  right: 45%;
+  border-radius: 50%;
+  box-shadow: 0 0 0 7px rgb(233 230 230);
+  /* overflow: hidden; */
+}
+
+/* digital-cv du an */
+.hr1 {
+  border-top: 2px solid #333;
+}
+.hr3 {
+  border-top: 2px dashed #199cdb;
+}
+
+/* truot tu trai sang phai */
+@keyframes SlideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes SlideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* truot tu tren xuong duoi */
+@keyframes SlideInFromTop {
+  0% {
+    transform: translatey(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes SlideInFromBottom {
+  0% {
+    transform: translatey(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* man hinh may tinh >=992px */
+@media (min-width: 992px) {
+  .item1 {
+    border-left: 1px solid #333;
+  }
+
+  .item2 {
+    border-left: 1px solid #333;
+    margin-right: 15px;
+  }
+  .item5 {
+    padding: 0 30px;
+  }
+
+  .item4 {
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+  }
+
+  #personal-info {
+    padding-left: 100px;
+  }
+
+  .certificate1,
+  .certificate2 {
+    border-bottom: 1px solid #d6c08d;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+
+  .certificate2::before {
+    content: '';
+    top: 6%;
+    height: 255px;
+    width: 1px;
+    right: 100%;
+    background-color: #d6c08d;
+    position: absolute;
+  }
+
+  .certificate2 {
+    padding-left: 8rem;
+  }
+
+  .certificate1,
+  .certificate3 {
+    padding-left: 3rem;
+  }
+
+  /* truot tu trai qua phai */
+  .content-kn,
+  .content-skills,
+  .content-lang,
+  .certificate1,
+  .certificate3,
+  .plan1,
+  #target {
+    animation: SlideInFromLeft 1.5s ease-in;
+  }
+  /* truot phai qua trai */
+  .active-hd,
+  .edu-hv,
+  .hobby-sth,
+  .certificate2,
+  .plan3,
+  #personal-info {
+    animation: SlideInFromRight 1.5s ease-in;
+  }
+  /* truot tu duoi len tren */
+  .plan2 {
+    animation: SlideInFromBottom 1.5s ease-in;
+  }
+  /* chinh kick thuoc cho table */
+  .content-plan {
+    width: 100%;
+    height: 350px;
+  }
+
+  tbody th,
+  td {
+    font-size: none;
+  }
+}

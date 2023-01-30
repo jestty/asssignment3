@@ -1,0 +1,40 @@
+/* man hinh mobile width <= 576px*/
+@media (max-width: 576px) {
+  .img-certificate2,
+  .img-certificate3 {
+    border-top: orange solid 1px;
+  }
+  .text-banner h1 {
+    font-size: 1.2rem;
+  }
+  .text-banner span {
+    font-size: 0.6rem;
+  }
+
+  #footer {
+    font-size: 70%;
+  }
+  #footer i {
+    font-size: 1.2rem;
+  }
+
+  .icon-plan1,
+  .icon-plan2,
+  .icon-plan3 {
+    padding: 0.5rem;
+  }
+
+  .plan-title1,
+  .plan-title2,
+  .plan-title3 {
+    padding: 0.5rem;
+  }
+
+  /* digital-cv  */
+
+  .timeline {
+    width: 100%;
+    max-width: 100%;
+    flex-shrink: 0;
+  }
+}
