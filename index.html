@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/laptop.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
     <link rel="stylesheet" href="./css/font.css" />
     <link
       rel="stylesheet"
@@ -16,7 +18,7 @@
     <title>Assignment 03</title>
   </head>
   <body>
-    <section class="bg-light p-5 text-center">
+    <section class="p-sm-5 text-center">
       <div class="container position-relative">
         <img class="img-fluid" src="./images/banner.jpg" alt="banner" />
         <div
@@ -29,9 +31,11 @@
     </section>
     <!-- phan top nav -->
     <header id="nav-bar">
-      <nav class="nabar nabar-expand-md bg-light ps-5 pe-5">
+      <nav class="nabar nabar-expand-md ps-5 pe-5">
         <div class="container">
-          <ul class="navbar-nav flex-column flex-sm-row justify-content-center">
+          <ul
+            class="navbar-nav flex-column flex-sm-row position-relative justify-content-center"
+          >
             <li class="item1 nav-item">
               <div class="d-flex flex-row align-items-center mx-3">
                 <i class="fa icon-user text-primary"></i>
@@ -51,7 +55,13 @@
               </div>
             </li>
             <!-- anh avata -->
-            <li class="nav-item m-4 d-none d-sm-block"></li>
+            <li class="nav-item m-md-4 item5">
+              <img
+                class="position-absolute d-none d-lg-block img-info"
+                src="./images/default-avatar.webp.jpg"
+                alt="avatar"
+              />
+            </li>
 
             <li class="item3 nav-item">
               <div class="d-flex flex-row align-items-center mx-3">
@@ -74,10 +84,10 @@
       </nav>
     </header>
     <!-- phan muc tieu nghe nghiep -->
-    <section id="about" class="bg-primary text-light ps-5 pe-5 pt-3 pb-3">
+    <section id="about" class="bg-light text-dark ps-5 pe-5 pt-3">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 mt-3 ps-2" id="target">
+          <div class="col-md-6 col-sm bg-light mt-3 ps-sm-2" id="target">
             <h2 class="section-title">Mục tiêu nghề nghiệp</h2>
             <p class="ps-1">
               Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh Nghiệp
@@ -88,35 +98,65 @@
             </p>
           </div>
 
-          <div class="col-md-5 mt-3" id="personal-info">
-            <h2 class="section-title">Thông tin cá nhân</h2>
-            <ul class="list-unstyled ps-1">
-              <li><span>Giới tính</span> : Nam</li>
-              <li><span>Ngày sinh</span> : 19/05/2000</li>
-              <li><span>Điện thoại</span> : (+84) 912398xxx</li>
-              <li><span>Email</span> : sinhvien@funix.edu.vn</li>
-              <li><span>Địa chỉ</span> : Số 10, đường 10, Hà Nội</li>
-              <li><span>Website</span> : <a href="#">https://abc.tech</a></li>
-            </ul>
-            <div class="p-3">
-              <a
-                class="contact"
-                href="https://twitter.com/login?lang=ja"
-                target="_blank"
-                ><i class="fa icon-twitter text-white"></i
-              ></a>
-              <a
-                class="contact"
-                href="https://ja-jp.facebook.com/"
-                target="_blank"
-                ><i class="fa icon-facebook text-white"></i
-              ></a>
-              <a class="contact" href="https://www.google.com" target="_blank"
-                ><i class="fa icon-gplus text-white"></i>
-              </a>
-              <a class="contact" href="https://www.linkedin.com" target="_blank"
-                ><i class="fa icon-linkedin text-white"></i
-              ></a>
+          <div class="col-md-6 col-sm bg-grey mt-3" id="personal-info">
+            <div class="check-email">
+              <form>
+                <div class="mb-3">
+                  <label for="InputEmail1" class="form-label pb-2"
+                    >Thông tin cá nhân</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control check-input"
+                    id="InputEmail1"
+                    name="email"
+                    required
+                  />
+                  <div id="emailHelp" class="form-text">
+                    Hãy nhập email để xác thực.
+                  </div>
+                </div>
+                <button type="button" class="btn btn-primary button mb-3">
+                  Submit
+                </button>
+              </form>
+            </div>
+            <div class="d-none personal-info">
+              <h2 class="section-title">Thông tin cá nhân</h2>
+              <ul class="list-unstyled ps-1">
+                <li><span>Giới tính</span> : Nam</li>
+                <li><span>Ngày sinh</span> : 19/05/2000</li>
+                <li><span>Điện thoại</span> : (+84) 912398xxx</li>
+                <li><span>Email</span> : sinhvien@funix.edu.vn</li>
+                <li><span>Địa chỉ</span> : Số 10, đường 10, Hà Nội</li>
+                <li>
+                  <span>Website</span> :
+                  <a class="text-decoration-none" href="#">https://abc.tech</a>
+                </li>
+              </ul>
+              <div class="p-2">
+                <a
+                  class="contact"
+                  href="https://twitter.com/login?lang=ja"
+                  target="_blank"
+                  ><i class="fa icon-twitter text-primary"></i
+                ></a>
+                <a
+                  class="contact"
+                  href="https://ja-jp.facebook.com/"
+                  target="_blank"
+                  ><i class="fa icon-facebook text-primary"></i
+                ></a>
+                <a class="contact" href="https://www.google.com" target="_blank"
+                  ><i class="fa icon-gplus text-primary"></i>
+                </a>
+                <a
+                  class="contact"
+                  href="https://www.linkedin.com"
+                  target="_blank"
+                  ><i class="fa icon-linkedin text-primary"></i
+                ></a>
+              </div>
             </div>
           </div>
         </div>
@@ -128,13 +168,14 @@
         <div class="row justify-content-center">
           <!-- phan kinh nghiem -->
           <div
-            class="col-md-5 col-sm bg-secondary text-light border border-secondary mb-3 m-sm-3 content-kn radius"
+            class="col-lg-3 col-sm-5 bg-secondary text-light border border-secondary mb-3 m-sm-3 content-kn radius my-height"
           >
             <div class="d-flex justify-content-around p-3 icon-job">
               <h2 class="pt-3">Kinh nghiệm</h2>
-              <i class="pb-3 fa ic-toolbox h1"></i>
+              <i class="pb-3 fa ic-toolbox h2"></i>
             </div>
-            <div class="point-color">
+
+            <div class="point-color view-more1 d-none mb-3">
               <ul>
                 <li>
                   <p><strong>Full Stack Developer-Công ty Y</strong></p>
@@ -167,16 +208,20 @@
                 </li>
               </ul>
             </div>
+            <button type="button" class="btn bg-grey my-btn1 d-none p-2">
+              <i class="bi bi-caret-down-fill text-dark"></i>
+              <span class="view1">VIEW MORE</span>
+            </button>
           </div>
           <!-- phan hoc van -->
           <div
-            class="col-md-5 col-sm bg-secondary text-light border border-secondary mb-3 m-sm-3 edu-hv radius"
+            class="col-lg-3 col-sm-5 bg-light text-dark border border-secondary mb-3 m-sm-3 edu-hv radius my-height"
           >
             <div class="d-flex justify-content-around p-3 icon-job">
               <h2 class="pt-3">Học vấn</h2>
-              <i class="pb-3 fa ic-pencil h1"></i>
+              <i class="pb-3 fa ic-pencil h2"></i>
             </div>
-            <div class="point-color">
+            <div class="point-color view-more2 d-none mb-3">
               <ul>
                 <li>
                   <p><strong>FUNiX</strong></p>
@@ -192,16 +237,20 @@
                 </li>
               </ul>
             </div>
+            <button type="button" class="btn bg-slayGrey my-btn2 d-none p-2">
+              <i class="bi bi-caret-down-fill text-dark"></i>
+              <span class="view2">VIEW MORE</span>
+            </button>
           </div>
           <!-- phan hoat dong -->
           <div
-            class="col-md-5 col-sm bg-primary text-light border border-secondary mb-3 m-sm-3 active-hd radius"
+            class="col-lg-3 col-sm-5 flex-1 bg-primary text-light border border-secondary mb-3 m-sm-3 active-hd radius my-height"
           >
             <div class="d-flex justify-content-around p-3 icon-job">
               <h2 class="pt-3">Hoạt động</h2>
-              <i class="pb-3 fa ic-toolbox h1"></i>
+              <i class="pb-3 fa ic-toolbox h2"></i>
             </div>
-            <div class="point-color">
+            <div class="point-color view-more3 d-none mb-3">
               <ul>
                 <li>
                   <p><strong>FPT Edu Hackathon 2019</strong></p>
@@ -216,16 +265,20 @@
                 </li>
               </ul>
             </div>
+            <button type="button" class="btn bg-slayGrey my-btn3 d-none p-2">
+              <i class="bi bi-caret-down-fill text-dark"></i>
+              <span class="view3">VIEW MORE</span>
+            </button>
           </div>
           <!-- so thich -->
           <div
-            class="col-md-5 col-sm bg-light text-dark border border-secondary m-0 m-sm-3 hobby-sth radius"
+            class="col-lg-3 col-sm-5 bg-light text-dark border border-secondary mb-3 m-sm-3 hobby-sth radius my-height"
           >
             <div class="d-flex justify-content-around p-3 icon-job">
               <h2 class="pt-3">Sở thích</h2>
-              <i class="pb-3 fa ic-telescope h1"></i>
+              <i class="pb-3 fa ic-telescope h2"></i>
             </div>
-            <div class="pt-3 pb-3 content-hobby-sth">
+            <div class="pt-3 pb-3 view-more4 d-none mb-3">
               <div
                 class="d-flex flex-wrap justify-content-around icon-hobby-sth"
               >
@@ -255,16 +308,20 @@
                 </div>
               </div>
             </div>
+            <button type="button" class="btn bg-slayGrey my-btn4 d-none p-2">
+              <i class="bi bi-caret-down-fill text-dark"></i>
+              <span class="view4">VIEW MORE</span>
+            </button>
           </div>
           <!-- ngon ngu -->
           <div
-            class="col-md-5 col-sm bg-success text-light border border-secondary mb-3 m-sm-3 content-lang radius"
+            class="col-lg-3 col-sm-5 bg-success text-light border border-secondary mb-3 m-sm-3 content-lang radius my-height"
           >
             <div class="d-flex justify-content-around p-3 icon-job">
               <h2 class="pt-3">Ngôn ngữ</h2>
-              <i class="pb-3 fa ic-mic h1"></i>
+              <i class="pb-3 fa ic-mic h2"></i>
             </div>
-            <div class="multilang">
+            <div class="multilang view-more5 d-none mb-3">
               <p>Tiếng Anh-IELTS 7.0</p>
               <span class="bolt1"></span>
               <span class="bolt1"></span>
@@ -274,16 +331,20 @@
               <span class="bolt2"></span>
               <span class="bolt2"></span>
             </div>
+            <button type="button" class="btn bg-slayGrey my-btn5 d-none p-2">
+              <i class="bi bi-caret-down-fill text-dark"></i>
+              <span class="view5">VIEW MORE</span>
+            </button>
           </div>
           <!-- ky nang -->
           <div
-            class="col-md-5 col-sm bg-primary text-light border border-secondary mb-3 m-sm-3 content-skills radius"
+            class="col-lg-3 col-sm-5 bg-primary text-light border border-secondary mb-3 m-sm-3 content-skills radius my-height"
           >
             <div class="d-flex justify-content-around p-3 icon-job">
               <h2 class="pt-3">Kỹ năng</h2>
-              <i class="pb-3 fa ic-tools-2 h1"></i>
+              <i class="pb-3 fa ic-tools-2 h2"></i>
             </div>
-            <div class="mutilskills">
+            <div class="mutilskills view-more6 d-none mb-3">
               <p>HTML/CSS:Fundamental</p>
               <p>
                 <span class="bolt1"></span>
@@ -309,6 +370,10 @@
                 <span class="bolt2"></span>
               </p>
             </div>
+            <button type="button" class="btn bg-slayGrey my-btn6 d-none p-2">
+              <i class="bi bi-caret-down-fill text-dark"></i>
+              <span class="view6">VIEW MORE</span>
+            </button>
           </div>
         </div>
       </div>
@@ -321,7 +386,7 @@
       <div class="container">
         <h2 class="section-title">Chứng chỉ - Giải thưởng</h2>
         <div class="row multicertificate">
-          <div class="col-md-6 col-sm m-4 ps-0 ps-sm-4 certificate1">
+          <div class="col-sm-6 certificate1">
             <div class="img-certificate1">
               <img
                 class="pt-3 img-fluid"
@@ -336,7 +401,7 @@
             </div>
           </div>
 
-          <div class="col-md-4 col-sm m-4 ps-0 ps-sm-4 certificate2">
+          <div class="col-sm-6 certificate2">
             <div class="img-certificate2">
               <img
                 class="pt-3 img-fluid"
@@ -351,7 +416,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-sm m-4 ps-0 ps-sm-4 ps-sm-0 certificate3">
+          <div class="col-sm certificate3">
             <div class="img-certificate3">
               <img
                 class="pt-3 img-fluid"
@@ -382,11 +447,11 @@
                 alt="image phan"
               />
             </div>
-            <div class="plan-title">
+            <div class="plan-title1 p-lg-3">
               <p><strong>CV CÁ NHÂN</strong></p>
             </div>
             <div
-              class="d-flex flex-column flex-sm-row border border-secondary justify-content-around align-items-start p-4 icon-plan"
+              class="d-flex flex-wrap flex-sm-row border border-secondary justify-content-around align-items-start p-lg-3 icon-plan1"
             >
               <div>
                 <span class="badge rounded-pill bg-primary p-2 time-bg"
@@ -398,7 +463,7 @@
               <i class="fa icon-lamp h4"></i>
               <div><span>Developer</span></div>
             </div>
-            <div class="table-responsive">
+            <div class="table-responsive-md">
               <table class="table table-bordered border-secondary">
                 <tbody class="content-plan">
                   <tr>
@@ -421,6 +486,11 @@
                 </tbody>
               </table>
             </div>
+            <a
+              class="link-primary text-decoration-none"
+              href="./digital-cv.html"
+              >Read More...</a
+            >
           </div>
 
           <div class="col-md-4 col-sm plan2">
@@ -432,11 +502,11 @@
               />
             </div>
 
-            <div class="plan-title">
+            <div class="plan-title2 p-lg-3">
               <p><strong>TRANG WEB QUẢN LÝ THÚ CƯNG</strong></p>
             </div>
             <div
-              class="d-flex flex-column flex-sm-row border border-secondary justify-content-around align-items-start p-4 icon-plan"
+              class="d-flex flex-wrap flex-sm-row border border-secondary justify-content-around align-items-start p-lg-3 icon-plan2"
             >
               <div>
                 <span class="badge rounded-pill bg-primary p-2 time-bg"
@@ -449,7 +519,7 @@
               <div><span>Developer</span></div>
             </div>
 
-            <div class="table-responsive">
+            <div class="table-responsive-md">
               <table class="table table-bordered border-secondary">
                 <tbody class="content-plan">
                   <tr>
@@ -473,6 +543,11 @@
                 </tbody>
               </table>
             </div>
+            <a
+              class="link-primary text-decoration-none"
+              href="./digital-cv.html"
+              >Read More...</a
+            >
           </div>
 
           <div class="col-md-4 col-sm plan3">
@@ -484,11 +559,11 @@
               />
             </div>
 
-            <div class="plan-title">
+            <div class="plan-title3 p-lg-3">
               <p><strong>TRANG WEB XEM TIN TỨC</strong></p>
             </div>
             <div
-              class="d-flex flex-column flex-sm-row border border-secondary justify-content-around align-items-start p-4 icon-plan"
+              class="d-flex flex-wrap flex-sm-row border border-secondary justify-content-around align-items-start p-lg-3 icon-plan3"
             >
               <div>
                 <span
@@ -502,7 +577,7 @@
               <div><span>Developer</span></div>
             </div>
 
-            <div class="table-responsive">
+            <div class="table-responsive-md">
               <table class="table table-bordered border-secondary">
                 <tbody class="content-plan">
                   <tr>
@@ -525,45 +600,40 @@
                 </tbody>
               </table>
             </div>
+            <a class="link-primary text-decoration-none" href="digital-cv.html"
+              >Read More...</a
+            >
           </div>
         </div>
       </div>
     </section>
 
-    <section id="footer" class="p-5 bg-grey">
+    <footer
+      id="footer"
+      class="p-5 bg-dark text-white text-start position-relative"
+    >
       <div class="container">
         <div class="d-flex justify-content-center align-items-center m-auto">
           <div class="badge rounded-circle bg-primary p-1">
             <i class="bi bi-facebook m-1 h5"></i>
           </div>
           <div class="p-1 p-sm-4">
-            <a class="link-secondary text-decoration-none contact1" href="#"
-              >Facebook</a
-            >
+            <a class="link-secondary contact1" href="#">Facebook</a>
           </div>
           <div class="badge rounded-circle bg-primary p-1">
             <i class="bi bi-linkedin m-1 h5"></i>
           </div>
           <div class="p-1 p-sm-4">
-            <a class="link-secondary text-decoration-none contact1" href="#"
-              >Linkedin</a
-            >
+            <a class="link-secondary contact1" href="#">Linkedin</a>
           </div>
           <div class="badge rounded-circle bg-primary p-1">
             <i class="text-center bi bi-github m-1 h5"></i>
           </div>
           <div class="p-1 p-sm-4">
-            <a class="link-secondary text-decoration-none contact1" href="#"
-              >Github</a
-            >
+            <a class="link-secondary contact1" href="#">Github</a>
           </div>
         </div>
-      </div>
-    </section>
 
-    <footer class="p-5 bg-dark text-white text-start position-relative">
-      <div class="container">
-        <p class="lead">Copyright &copy; 2023</p>
         <a href="#" class="fixed-bottom text-end p-3 p-sm-2">
           <i class="bi bi-arrow-up-circle h2"></i>
         </a>
